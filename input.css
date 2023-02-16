@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .cl1 p, .cl2 p, .cl3 p, .cl4 p{
+        @apply font-mono text-sm text-blue-600;
+    } 
+    .cl1 span, .cl2 span, .cl3 span, .cl4 span {
+        @apply text-2xl text-blue-900 font-bold mt-2;
+    }
+    .text1 {
+        @apply mt-6 text-2xl tracking-tight text-blue-900;
+    }
+    .alar {
+        @apply mt-12;
+    }
+    .a123{
+        @apply font-mono text-sm text-blue-600;
+    }
+    .a123span {
+        @apply mt-1.5 block text-2xl font-semibold tracking-tight text-blue-900;
+    }
+    .b1, .b2, .b3, .b4, .b5, .b6 {
+        @apply relative;
+    }
+    .zoom {
+        @apply overflow-hidden inline-block align-top relative;
+    }
+    .zoom img {
+        @apply block w-full transition-all duration-500 ease-in-out;
+    }
+    .overlay-gradient {
+        @apply absolute top-0 left-0 bottom-0 right-0 w-full h-full bg-bir;
+    }
+    .oll {
+        @apply mt-10 space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-blue-900/5 backdrop-blur;
+    }
+    .lidiv {
+        @apply mx-auto mb-8 h-px w-48 bg-indigo-500/10;
+    }
+    .lih4 {
+        @apply text-lg font-semibold tracking-tight text-blue-900;
+    }
+    .lip1 {
+        @apply mt-1 tracking-tight text-blue-900;
+    }
+    .lip2 {
+        @apply mt-1 font-mono text-sm text-slate-500;
+    }
+}

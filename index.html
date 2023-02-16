@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tailwind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <div class="flex items-center gap-4 px-4 text-cyan-600 md:flex lg:hidden border-b border-blue-600/10 py-4 justify-center">
+    <p>04-06 of April, 2022</p>
+    <span><i class="fa-solid fa-snowflake"></i></span>
+    <p>Los Angeles, CA</p>
+  </div>
+  <body class="relative">
+    <div class="absolute inset-x-0 top-48 overflow-hidden bg-indigo-50">
+      <img
+        src="img/main.png"
+        class="absolute top-0 left-0 translate-y-[-10%] translate-x-[-55%] -scale-x-100 sm:left-1/2 sm:translate-y-[-6%] sm:translate-x-[-98%] lg:translate-x-[-106%] xl:translate-x-[-122%]"
+        alt=""
+      />
+    </div>
+    <header class="container flex justify-between items-center pt-7">
+      <div class="logo flex text-2xl">
+        <i class="fa-solid text-[40px] fa-chevron-left"></i>
+        <span>DeceptiConf</span>
+      </div>
+      <div class="flex items-center gap-4 px-4 text-cyan-600 hidden lg:flex">
+        <p>04-06 of April, 2022</p>
+        <span><i class="fa-solid fa-snowflake"></i></span>
+        <p>Los Angeles, CA</p>
+      </div>
+      <div
+        class="bg-blue-600 p-4 rounded-2xl hover:bg-blue-500 text-white font-bold"
+      >
+        <a href="#" class="">Get your tickets</a>
+      </div>
+    </header>
+
+    <!-- Section1 -->
+    <div class="container px-4 relative pt-10 pb-20 py-24">
+      <div class="container lg:max-w-4xl lg:px-12">
+        <h1
+          class="font-display lg:text-5xl font-bold tracking-tighter text-blue-600 text-5xl"
+        >
+          A design conference for the dark side.
+        </h1>
+        <p class="text1">
+          The next generation of web users are tech-savvy and suspicious. They
+          know how to use dev tools, they can detect a phishing scam from a mile
+          away, and they certainly aren’t accepting any checks from Western
+          Union.
+        </p>
+        <p class="text1">
+          At DeceptiConf you’ll learn about the latest dark patterns being
+          developed to trick even the smartest visitors, and you’ll learn how to
+          deploy them without ever being detected.
+        </p>
+      </div>
+      <div
+        class="container mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-center lg:text-left"
+      >
+        <div class="cl1">
+          <p>Speakers</p>
+          <span>18</span>
+        </div>
+        <div class="cl2">
+          <p>People Attending</p>
+          <span>2,091</span>
+        </div>
+        <div class="cl3">
+          <p>Venue</p>
+          <span>Staples Center</span>
+        </div>
+        <div class="cl4">
+          <p>Location</p>
+          <span>Los Angeles</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section2 -->
+    <div class="container max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2
+          class="text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl"
+        >
+          Speakers
+        </h2>
+        <p class="mt-4 text-2xl tracking-tight text-blue-900">
+          Learn from the experts on the cutting-edge of deception at the most
+          sinister companies.
+        </p>
+      </div>
+      <div class="mt-14 flex flex-col lg:flex-row sm:mt-16 sm:gap-y-16 lg:mt-24">
+        <div class="a w-[100%] lg:w-1/4 flex flex-row justify-center lg:justify-start lg:flex-col gap-x-8 gap-y-4">
+          <div class="w-[115%] flex">
+            <div class="a1 w-[50%] alar">
+              <a href="#" class="a123">
+                <p>Opening Day</p>
+                <span class="a123span">April 4</span>
+              </a>
+            </div>
+            <div class="a2 w-[50%] alar">
+              <a href="#" class="a123">
+                <p>Speakers & Workshops</p>
+                <span class="a123span">April 5</span>
+              </a>
+            </div>
+            <div class="a3 w-[50%] alar">
+              <a href="#" class="a123">
+                <p>Interviews</p>
+                <span class="a123span">April 6</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="b w-[100%] lg:w-3/4 flex flex-wrap justify-between gap-y-4">
+          <div class="b1 group">
+            <div class="w-[280px] h-[280px] zoom rounded-3xl">
+              <img
+                class="group-hover:scale-[1.2] w-full h-[280px] object-cover"
+                src="img/image1.png"
+                alt=""
+              />
+              <div class="overlay-gradient"></div>
+            </div>
+            <div class="">
+              <h3
+                class="mt-8 font-display text-xl font-bold tracking-tight text-slate-900"
+              >
+                Steven McHail
+              </h3>
+              <p class="mt-1 text-base tracking-tight text-slate-500">
+                Designer at Globex Corporation
+              </p>
+            </div>
+          </div>
+          <div class="b2 group">
+            <div class="w-[280px] h-[280px] zoom rounded-3xl">
+              <img
+                class="group-hover:scale-[1.2] w-full h-[280px] object-cover"
+                src="img/image2.png"
+                alt=""
+              />
+              <div class="overlay-gradient"></div>
+            </div>
+            <div class="">
+              <h3
+                class="mt-8 font-display text-xl font-bold tracking-tight text-slate-900"
+              >
+                Jaquelin Isch
+              </h3>
+              <p class="mt-1 text-base tracking-tight text-slate-500">
+                UX Design at InGen
+              </p>
+            </div>
+          </div>
+          <div class="b3 group">
+            <div class="w-[280px] h-[280px] zoom rounded-3xl">
+              <img
+                class="group-hover:scale-[1.2] w-full h-[280px] object-cover"
+                src="img/image3.png"
+                alt=""
+              />
+              <div class="overlay-gradient"></div>
+            </div>
+            <div class="">
+              <h3
+                class="mt-8 font-display text-xl font-bold tracking-tight text-slate-900"
+              >
+                Dianne Guilianelli
+              </h3>
+              <p class="mt-1 text-base tracking-tight text-slate-500">
+                General Manager at Initech
+              </p>
+            </div>
+          </div>
+          <div class="b4 group">
+            <div class="w-[280px] h-[280px] zoom rounded-3xl">
+              <img
+                class="group-hover:scale-[1.2] w-full h-[280px] object-cover"
+                src="img/image4.png"
+                alt=""
+              />
+              <div class="overlay-gradient"></div>
+            </div>
+            <div class="">
+              <h3
+                class="mt-8 font-display text-xl font-bold tracking-tight text-slate-900"
+              >
+                Ronni Cantadore
+              </h3>
+              <p class="mt-1 text-base tracking-tight text-slate-500">
+                Design Engineer at Weyland-Yutani
+              </p>
+            </div>
+          </div>
+          <div class="b5 group">
+            <div class="w-[280px] h-[280px] zoom rounded-3xl">
+              <img
+                class="group-hover:scale-[1.2] w-full h-[280px] object-cover"
+                src="img/image5.png"
+                alt=""
+              />
+              <div class="overlay-gradient"></div>
+            </div>
+            <div class="">
+              <h3
+                class="mt-8 font-display text-xl font-bold tracking-tight text-slate-900"
+              >
+                Erhart Cockrin
+              </h3>
+              <p class="mt-1 text-base tracking-tight text-slate-500">
+                Product Lead at Cyberdyne Systems
+              </p>
+            </div>
+          </div>
+          <div class="b6 group">
+            <div class="w-[280px] h-[280px] zoom rounded-3xl">
+              <img
+                class="group-hover:scale-[1.2] w-full h-[280px] object-cover"
+                src="img/image6.png"
+                alt=""
+              />
+              <div class="overlay-gradient"></div>
+            </div>
+            <div class="">
+              <h3
+                class="mt-8 font-display text-xl font-bold tracking-tight text-slate-900"
+              >
+                Parker Johnson
+              </h3>
+              <p class="mt-1 text-base tracking-tight text-slate-500">
+                UI Designer at MomCorp
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section3 -->
+    <div class="container py-20 sm:py-52">
+      <div class="max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
+          <h2
+            class="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl"
+          >
+            Our three day schedule is jam-packed with brilliant, creative, evil
+            geniuses.
+          </h2>
+          <p class="mt-4 font-display text-2xl tracking-tight text-blue-900">
+            The worst people in our industry giving the best talks you’ve ever
+            seen. Nothing will be recorded and every attendee has to sign an NDA
+            to watch the talks.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section4 -->
+    <div class="px-4 sm:px-6 lg:px-8 py-12 bg-slate-100">
+      <div class="container lg:grid lg:grid-cols-3 lg:gap-x-8">
+        <div class="coll1 mb-24">
+          <h3 class="text-2xl font-semibold tracking-tight text-blue-900">
+            April 4
+          </h3>
+          <p class="mt-1.5 text-base tracking-tight text-blue-900">
+            The first day of the conference is focused on dark patterns for
+            ecommerce.
+          </p>
+          <ol class="oll">
+            <li>
+              <h4 class="lih4">Steven McHail</h4>
+              <p class="lip1">Not so one-time payments</p>
+              <p class="lip2">
+                <span>9:00AM</span>
+                <span>10:00PM</span>
+              </p>
+            </li>
+            <div class="lidiv"></div>
+            <li>
+              <h4 class="lih4">Jaquelin Isch</h4>
+              <p class="lip1">The finer print</p>
+              <p class="lip2">
+                <span>10:00AM</span>
+                <span>11:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Dianne Guilianelli</h4>
+              <p class="lip1">Post-purchase blackmail</p>
+              <p class="lip2">
+                <span>11:00AM</span>
+                <span>12:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Lunch</h4>
+              <p class="lip2">
+                <span>12:00PM</span>
+                <span>1:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Ronni Cantadore</h4>
+              <p class="lip1">Buy or die</p>
+              <p class="lip2">
+                <span>1:00PM</span>
+                <span>2:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Erhart Cockrin</h4>
+              <p class="lip1">In-person cancellation</p>
+              <p class="lip2">
+                <span>2:00PM</span>
+                <span>3:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Parker Johnson</h4>
+              <p class="lip1">The pay/cancel switcheroo</p>
+              <p class="lip2">
+                <span>3:00PM</span>
+                <span>4:00PM</span>
+              </p>
+            </li>
+          </ol>
+        </div>
+        <div class="coll2 mb-24">
+          <h3 class="text-2xl font-semibold tracking-tight text-blue-900">
+            April 5
+          </h3>
+          <p class="mt-1.5 text-base tracking-tight text-blue-900">
+            Next we spend the day talking about deceiving people with
+            technology.
+          </p>
+          <ol class="oll">
+            <li>
+              <h4 class="lih4">Steven McHail</h4>
+              <p class="lip1">Not so one-time payments</p>
+              <p class="lip2">
+                <span>9:00AM</span>
+                <span>10:00PM</span>
+              </p>
+            </li>
+            <div class="lidiv"></div>
+            <li>
+              <h4 class="lih4">Jaquelin Isch</h4>
+              <p class="lip1">The finer print</p>
+              <p class="lip2">
+                <span>10:00AM</span>
+                <span>11:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Dianne Guilianelli</h4>
+              <p class="lip1">Post-purchase blackmail</p>
+              <p class="lip2">
+                <span>11:00AM</span>
+                <span>12:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Lunch</h4>
+              <p class="lip2">
+                <span>12:00PM</span>
+                <span>1:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Ronni Cantadore</h4>
+              <p class="lip1">Buy or die</p>
+              <p class="lip2">
+                <span>1:00PM</span>
+                <span>2:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Erhart Cockrin</h4>
+              <p class="lip1">In-person cancellation</p>
+              <p class="lip2">
+                <span>2:00PM</span>
+                <span>3:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Parker Johnson</h4>
+              <p class="lip1">The pay/cancel switcheroo</p>
+              <p class="lip2">
+                <span>3:00PM</span>
+                <span>4:00PM</span>
+              </p>
+            </li>
+          </ol>
+        </div>
+        <div class="coll3">
+          <h3 class="text-2xl font-semibold tracking-tight text-blue-900">
+            April 6
+          </h3>
+          <p class="mt-1.5 text-base tracking-tight text-blue-900">
+            We close out the event previewing new techniques that are still in
+            development.
+          </p>
+          <ol class="oll">
+            <li>
+              <h4 class="lih4">Steven McHail</h4>
+              <p class="lip1">Not so one-time payments</p>
+              <p class="lip2">
+                <span>9:00AM</span>
+                <span>10:00PM</span>
+              </p>
+            </li>
+            <div class="lidiv"></div>
+            <li>
+              <h4 class="lih4">Jaquelin Isch</h4>
+              <p class="lip1">The finer print</p>
+              <p class="lip2">
+                <span>10:00AM</span>
+                <span>11:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Dianne Guilianelli</h4>
+              <p class="lip1">Post-purchase blackmail</p>
+              <p class="lip2">
+                <span>11:00AM</span>
+                <span>12:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Lunch</h4>
+              <p class="lip2">
+                <span>12:00PM</span>
+                <span>1:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Ronni Cantadore</h4>
+              <p class="lip1">Buy or die</p>
+              <p class="lip2">
+                <span>1:00PM</span>
+                <span>2:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Erhart Cockrin</h4>
+              <p class="lip1">In-person cancellation</p>
+              <p class="lip2">
+                <span>2:00PM</span>
+                <span>3:00PM</span>
+              </p>
+            </li>
+            <li>
+              <div class="lidiv"></div>
+              <h4 class="lih4">Parker Johnson</h4>
+              <p class="lip1">The pay/cancel switcheroo</p>
+              <p class="lip2">
+                <span>3:00PM</span>
+                <span>4:00PM</span>
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section5 -->
+    <div class="py-20 sm:py-32">
+      <div class="container max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2
+          class="mx-auto max-w-2xl text-center font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl"
+        >
+          Current sponsorships for our workshops and speakers.
+        </h2>
+        <div
+          class="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center lg:gap-y-12 gap-y-12 gap-x-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32"
+        >
+          <div class="flex items-center justify-center">
+            <img
+              alt="Transistor"
+              src="https://keynote.tailwindui.com/_next/static/media/transistor.a1e38d49.svg"
+              class="w-[158px] h-[48px]"
+              style="color: transparent"
+            />
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              alt="Tuple"
+              src="https://keynote.tailwindui.com/_next/static/media/tuple.2f54ed03.svg"
+              class="w-[105px] h-[48px]"
+              style="color: transparent"
+            />
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              alt="StaticKit"
+              src="https://keynote.tailwindui.com/_next/static/media/statickit.2e06fcea.svg"
+              class="w-[127px] h-[48px]"
+              style="color: transparent"
+            />
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              alt="Mirage"
+              src="https://keynote.tailwindui.com/_next/static/media/mirage.e12f40ad.svg"
+              class="w-[138px] h-[48px]"
+              style="color: transparent"
+            />
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              alt="Laravel"
+              src="https://keynote.tailwindui.com/_next/static/media/laravel.6faebf7c.svg"
+              class="w-[136px] h-[48px]"
+              style="color: transparent"
+            />
+          </div>
+          <div class="flex items-center justify-center">
+            <img
+              alt="Statamic"
+              src="https://keynote.tailwindui.com/_next/static/media/statamic.923101b6.svg"
+              class="w-[147px] h-[48px]"
+              style="color: transparent"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section6 -->
+    <div class="container max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div
+        class="relative -mx-4 overflow-hidden bg-indigo-50 py-20 px-4 sm:-mx-6 sm:px-6 md:mx-0 rounded-3xl md:px-16 xl:px-24 xl:py-36"
+      >
+        <img
+          alt=""
+          src="img/main.png"
+          class="w-[919px] h-[1351px] absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]"
+          style="color: transparent"
+        />
+        <div
+          class="relative mx-auto grid max-w-2xl grid-cols-1 gap-x-32 gap-y-14 xl:max-w-none xl:grid-cols-2"
+        >
+          <div>
+            <p
+              class="font-display text-4xl font-medium tracking-tighter text-blue-900 sm:text-5xl"
+            >
+              Stay up to date
+            </p>
+            <p class="mt-4 text-lg tracking-tight text-blue-900">
+              Get updates on all of our events and be the first to get notified
+              when tickets go on sale.
+            </p>
+          </div>
+          <form>
+            <h3 class="text-lg font-semibold tracking-tight text-blue-900">
+              Sign up to our newsletter <span aria-hidden="true">↓</span>
+            </h3>
+            <div
+              class="mt-5 flex rounded-3xl bg-white py-2.5 pr-2.5 shadow-xl shadow-blue-900/5 focus-within:ring-2 focus-within:ring-blue-900"
+            >
+              <input
+                type="email"
+                required=""
+                placeholder="Email address"
+                aria-label="Email address"
+                class="-my-2.5 flex-auto bg-transparent pl-6 pr-2.5 text-base text-slate-900 placeholder:text-slate-400 focus:outline-none"
+              /><button
+                class="inline-flex justify-center rounded-2xl bg-blue-600 p-4 text-base font-semibold text-white hover:bg-blue-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:text-white/70"
+                type="submit"
+              >
+                <span class="sr-only sm:not-sr-only">Sign up today</span
+                ><span class="sm:hidden"> </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+      <footer
+        class="container py-16 max-w-6xl px-4 sm:px-6 lg:px-8 flex flex-row items-center justify-between"
+      >
+      <div class="logo flex text-2xl">
+        <i class="fa-solid text-[40px] fa-chevron-left"></i>
+        <span>DeceptiConf</span>
+      </div>
+        <p class="text-base text-slate-500">
+          Copyright ©
+          2023
+          DeceptiConf, LLC. All rights reserved.
+        </p>
+      </footer>
+  </body>
+</html>
