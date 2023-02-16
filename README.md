@@ -1,0 +1,2 @@
+# Ilk tailwind proyektim
+:smile:
